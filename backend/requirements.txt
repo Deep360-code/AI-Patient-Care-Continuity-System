@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+supabase
+python-dotenv
+apscheduler
+twilio
+requests
+pydantic
+python-multipart
+pytest
+python-jose[cryptography]
+pdfplumber
+bcrypt

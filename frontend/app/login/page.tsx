@@ -5,8 +5,8 @@ import { useRouter } from 'next/navigation'
 import { Stethoscope, UserPlus, LogIn, Loader2 } from 'lucide-react'
 import { getToken, setToken } from '@/utils/api'
 
-const BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'
-
+// const BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'
+const BASE_URL = "https://ai-patient-care-continuity-system-dd.onrender.com"
 export default function LoginPage() {
   const router = useRouter()
   const [tab, setTab] = useState<'login' | 'signup'>('login')
@@ -73,9 +73,8 @@ export default function LoginPage() {
             <button
               key={t}
               onClick={() => { setTab(t); setError('') }}
-              className={`flex-1 flex items-center justify-center gap-2 py-2 rounded-md text-sm font-medium transition-all ${
-                tab === t ? 'bg-primary text-primary-foreground shadow' : 'text-gray-400 hover:text-white'
-              }`}
+              className={`flex-1 flex items-center justify-center gap-2 py-2 rounded-md text-sm font-medium transition-all ${tab === t ? 'bg-primary text-primary-foreground shadow' : 'text-gray-400 hover:text-white'
+                }`}
             >
               {t === 'login' ? <LogIn size={15} /> : <UserPlus size={15} />}
               {t === 'login' ? 'Sign In' : 'Sign Up'}

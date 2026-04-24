@@ -1,7 +1,12 @@
 #  AI Healthcare Assistant
 
 An AI-powered healthcare assistant designed to improve patient follow-ups, automate communication, and provide intelligent medical support using Retrieval-Augmented Generation (RAG) and real-time workflows.
+---
+## 🎥 Demo Video
 
+This demo showcases the AI Healthcare Assistant, including patient-specific chat, RAG-based memory, and automated follow-up workflows.
+
+▶️ [Watch the full demo](https://youtu.be/zL95JaHT4p0)
 ---
 
 ##  Features
